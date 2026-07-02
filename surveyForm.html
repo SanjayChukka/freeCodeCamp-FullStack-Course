@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill the form to get connected.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name :</label>
+      <input type="text" id="name" placeholder="eg. Sanjay" required /><br>
+      <label for="email" id="email-label">Email :</label>
+      <input type="email" id="email" placeholder="eg. example@email.com" required/><br>
+      <label for="number" id="number-label">Number :</label>
+      <input
+        type="number"
+        id="number"
+        min="10"
+        max="10"
+        placeholder="mobile number"
+      /> <br>
+      <label>Are you a citizen of India.</label>
+      <select id="dropdown">
+        <option value="select">Select</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select> <br>
+
+      <label>Do you want to join us!</label>
+      <input type="radio" id="yes" value="yes" name="yes-no"/>
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" value="no" name="yes-no"/>
+      <label for="no">No</label>
+
+      <p>Tell us some suggestions in your words.</p>
+      <textarea name="words" id="words" placeholder="You can write here."></textarea><br>
+
+      <label>How is your Experience with us.</label> <br>
+      <input type="checkbox" value="excellent" >
+      <label>Excellent</label>
+      <input type="checkbox" value="very-good">
+      <label>Very Good</label>
+      <input type="checkbox" value="good">
+      <label>Good</label>
+      <input type="checkbox" value="Bad">
+      <label>Bad</label> <br>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
